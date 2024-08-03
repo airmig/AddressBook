@@ -1,0 +1,2 @@
+Z:/Documents/dotNET/AddressBook/addressbook.client/obj/Debug/addressbook.client.esproj.CoreCompileInputs.cache
+/Users/airmig/Documents/dotNET/AddressBook/addressbook.client/obj/Debug/addressbook.client.esproj.CoreCompileInputs.cache

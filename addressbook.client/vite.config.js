@@ -19,10 +19,34 @@ export default defineConfig({
     },
     server: {
         proxy: {
-            '^/weatherforecast': {
+            '^/addressbook/contacts': {
                 target,
                 secure: false
-            }
+            },
+            '^/addressbook/countries': {
+                target,
+                secure: false
+            }, 
+            '^/addressbook/deletecontact/': {
+                target,
+                secure: false,
+                changeOrigin: true,
+                rewrite: (path) => {
+                    // Preserve query strings
+                    const query = path.split('?')[1] ? `?${path.split('?')[1]}` : '';
+                    return path + query;
+                  }
+            },      
+            '^/addressbook/updatecontact': {
+                target,
+                secure: false,
+                changeOrigin: true
+            },
+            '^/addressbook/addcontact': {
+                target,
+                secure: false,
+                changeOrigin: true
+            },          
         },
         port: 5173
     }

@@ -1,11 +1,84 @@
-﻿#root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-}
-
-th, td {
+﻿th, td {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+.Init {
+    display:block;
+    width: 80%;
+    margin:0 auto;
+    border: 1px solid blueviolet;
+    padding: 10px;
+    margin-top: 10px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 12px 12px 2px 1px #91919d33;
+    margin-bottom: 50px;
+    overflow-x: auto;
+}
+
+.InitEdit {
+    border: 1px solid #bdb6b6;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.InitDetails {
+    display:block;
+    margin:0 auto;
+    border: 1px solid blueviolet;
+    padding: 10px;
+    margin-top: 10px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 12px 12px 2px 1px #91919d33;
+    margin-bottom: 50px;
+    overflow-x: auto;
+    text-overflow: ellipsis; 
+    width: 725px;
+}
+
+.InitDetails tr {
+    border-bottom: 1px dotted blue;
+}
+
+.address {
+    display:block;
+    width: auto;
+    height: 100px;
+    float: left;
+    clear: both;
+    padding-right:20px
+}
+
+.subMenu img {
+    width: 20px;
+    height: 20px;
+}
+
+.subMenu btm {
+    width: 20px;
+    height:20px;
+    border: none;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bd-violet-bg);
+    --bs-tooltip-color: var(--bs-white);
+  }
+
+  h4 {
+    margin: 0 auto;
+    width: 100%;
+    display:block;
+    text-align: center;
+  }
+
+  .headerColumn {
+    background-color: rgb(173, 242, 219);
+  }
+
+  input {
+    border: 1px solid black;
+  }
